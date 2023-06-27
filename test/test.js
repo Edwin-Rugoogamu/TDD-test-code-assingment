@@ -1,13 +1,8 @@
 var assert = require('assert');
- require("./multiply")
 
-describe('Array', function () {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal([1, 2, 3].indexOf(4), -1);
-    });
-  });
-});
+const factorial = require('./multiply')
+
+
 
 describe('Array', function () {
     describe('#indexOf()', function () {
@@ -68,8 +63,7 @@ describe('Array', function () {
       it('should return 4 when the value is multiplied',  function(){
 
          let  multiply= (a,b)=>{
-            return(a*b)
-           
+            return(a*b) 
          }
          assert.equal(multiply(23, 45), 23 * 45)
       });
@@ -79,4 +73,15 @@ describe('Array', function () {
 
 
 
+  
+   describe('#indexOf()', function () {
+     it('factorial implement',  function(){
+        assert.equal(factorial(6),720)
+     });
+   });
+ 
+
+
+
+ 
   
